@@ -3,11 +3,15 @@ body{
     background-color:#f0fdfa ;
     padding: 0;
     margin: 0 auto;
-    font-family: sans-serif;
+    font-family: 'montserrat',sans-serif;
+    font-size: 10px;
 }
 
 h1,h2,h3{
     text-align: center;
+    position: relative;
+    left: 20px;
+    text-transform: uppercase;
 }
 
 #navbar{
@@ -21,6 +25,7 @@ h1,h2,h3{
     font-weight: 200;
     position: relative;
     left: 60px;
+    display: none;
   
 }
 .whole-navbar{
@@ -32,11 +37,138 @@ h1,h2,h3{
     height: 250px;
     width: 450px;
     padding: 0;
-    /* object-fit: cover; */
+   
     
 }
+
+p {
+    text-align: center;
+    padding: 0 15px;
+    position: relative;
+    left: 20px;
+    
+}
+#coursepic {
+   
+    border-radius: 15px;
+    height: 200px;
+    width: 400px;
+    position: relative;
+    left: 20px;
+}
+.selectcourse {
+  text-align: center;
+  position: relative;
+  left: 40px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+#wholetable{
+    display: none;
+}
+
+.webd{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+    height: 30px;
+    text-align: center;
+    background-color:#d1fae5;
+}
+.appd{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+    height: 30px;
+    text-align: center;
+    background-color:#d1fae5;
+}
+.drops{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+    height: 30px;
+    text-align: center;
+    background-color:#d1fae5;
+}
+.digit{
+    border: 1px solid black;
+    background-color:#d1fae5;
+    border-radius: 3px;
+    padding: 10px;
+    height: 30px;
+    text-align: center;
+}
+#mobile-table {
+    display: block;
+    padding: 10px 0;
+    position: relative;
+    left: 30px;
+    text-transform: uppercase;
+}
+form input{
+    padding: 3px;  
+ }
+
+
+  
+form div{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 2px;
+
+}
+
+form{
+   position: relative;
+   left: 40px;
+}
+.footer {
+    text-align: center;
+    font-family: "fantasy",sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    color: gray;
+    position: relative;
+    left: 15px;
+}
+
+.wholefooter {
+    text-align: center;
+    padding: 10px;  
+    background-color:#d1fae5;
+    margin-right: -90px;
+}
+
+#links {
+    text-align: center;
+    text-decoration: none;
+}
+
+ li {
+list-style-type: none;
+}
+
+
+a:hover {
+    color: darkturquoise;
+ }
+  p:hover{
+    color: #134e4a;
+  }
+
+  #submit:hover{
+    cursor: pointer;
+}
+
 /*Tablet*/
+
 @media  screen and (min-width:576px ){
+    body{
+        font-size: 15px;
+    }
+    
     #bannerjipic {
         height: 400px;
         width: 100%;
@@ -45,13 +177,125 @@ h1,h2,h3{
         
     }
 
+    .navbar-name{
+        display: block;
+    }
+ 
+    #coursepic{
+        height: 200px;
+        float: right;
+        width: 400px;
+    }
+    .selectcourse {
+       margin-top: 50px;
+        font-size: 2rem;
+        font-weight: 500;
+        position: unset;
+    
+    }
+
+    #mobile-table{
+        display: none;
+    }
+    
+    #wholetable {
+        width: 100%;
+        background-color: aliceblue;
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 16px;
+        display: block;
+        margin-top: 60px;
+        
+    
+    
+    }
+    
+    .tabletitles th {
+        text-align: center;
+        border: 1px solid black;
+        border-bottom: ;
+        padding: 12px;
+        background-color:gainsboro
+    
+    
+    }
+    
+    .courserows td {
+        
+        padding: 12px;
+    
+    }
+    #wholetable tr:nth-child(odd){
+        background-color: #99f6e4;
+    }
+    form input{
+        padding: 8px;  
+     }
+     form div{
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 16px;
+      
+      }
+      
+      form{
+        position: unset;
+      }
+      
+#links {
+    text-align: center;
+    text-decoration: none;
+}
+
+#list li {
+
+
+    display: inline;
+    padding: 10px;
+}
+.prosndcons{
+    font-size: smaller;   
+   }
+   .selectcourse{
+    position: relative;
+    top:10px
+   }
+
 }
 
 
 /*Desktop*/
-@media  screen and (min-width:768px;)
+@media  screen and (min-width:768px) {
+    body{
+        font-size: 20px;
+    }
+    #coursepic{
+        float: right;
+        position: relative;
+        down:10px;
+     
+    }
+
+    #wholetable{
+        margin-top: 140px;
+    }
+    form input{
+        padding: 12px;  
+     }
+
+
+}
 /*larger desktops*/
-@media  screen and (min-width:992px;)
+
+@media  screen and (min-width:992px) and (max-width:1500px){
+    #wholetable{
+        margin-top: 150px;
+    }
+
+}
+
+
 
 
 
@@ -68,127 +312,29 @@ h1,h2,h3{
 
 
 
-#bannerjipic {
-   
-}
 
 
 
-.aboutus {
-    text-align: center;
-
-}
-
-#about {
-    padding: 8px;
-    padding: 16px;
-}
-
-#coursepic {
-    margin-top: 90px;
-    padding: 25px 25px 35px 25px;
-    border-radius: 35px;
-    float: right;
 
 
 
-}
 
 
 
-.kidding {
-    margin-top: 150px; 
-    color: gray;
-    padding: 8px;
-    position: relative;
-    left: 350px;
-}
-
-.escape {
-    color: black;
-    text-align: center;
-    padding: 8px;
-}
-
-.selectcourse {
-    padding: 0 0 50px 100px;
-    margin-top: 200px;
-    font-size: 2rem;
-
-
-}
-
-#links {
-    text-align: center;
-    text-decoration: none;
-}
-
-#list li {
-
-
-    display: inline;
-    padding: 30px;
-   
-
-}
 
 
 
-.footer {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 12px;
-    color: gray;
-}
-
-.wholefooter {
-    text-align: center;
-    background-color:#e0f2fe;
-    padding: 10px;
-   
-}
-
-div1{
-    padding: 20px;
-}
-
-#wholetable {
-    width: 100%;
-    background-color: aliceblue;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 16px;
-    
 
 
-}
-
-.tabletitles th {
-    text-align: center;
-    border: 1px solid black;
-    border-bottom: ;
-    padding: 12px;
-    background-color:gainsboro
 
 
-}
-
-.courserows td {
-    
-    padding: 12px;
-
-}
-#wholetable tr:nth-child(odd){
-    background-color: #99f6e4;
-}
  body{
-    font-family: 'montserrat',sans-serif;
     
  }
 
  h1,h2{
     font-family: 'roboto', sans-serif;
-    text-transform: uppercase;
+    
  }
  div 11{
     font-weight: 600;
@@ -202,35 +348,16 @@ div1{
 
   
 
- form input{
-    padding: 8px;
-    
- }
-
- a:hover {
-    color: darkturquoise;
- }
-  p:hover{
-    color: #134e4a;
-  }
-  
-form div{
-  margin-top: 8px;
-  margin-bottom: 8px;
-  padding: 16px;
-
-
-  
-  
-  
-  }
-.prosndcons{
- font-size: smaller;   
-}
  
-#submit:hover{
-    cursor: pointer;
-}
+
+
+  
+  
+  
+  }
+
+ 
+
 
 
 
